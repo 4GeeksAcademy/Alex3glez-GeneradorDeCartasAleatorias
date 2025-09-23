@@ -1,35 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Rigo with Vanilla.js</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+ <div class="container d-flex justify-content-center align-items-center h-100">
+  <img id="fondo" src="https://static.vecteezy.com/system/resources/previews/002/082/545/non_2x/modern-abstract-casino-background-with-playing-card-signs-poker-symbols-on-black-background-casino-symbols-widescreen-wallpaper-vector.jpg" alt="">
+
+    <div class="tapiz m-3 row w-100 d-flex justify-content-center align-items-center">
+      
+  
+      <div class="col-12 col-md-6  d-flex justify-content-center align-items-center m-4">
+        <div class="tarjeta rounded-4 d-flex flex-column border border-black p-2">
+          <div class="paloArriba ms-2 mt-2 w-25">
+            <img class="w-100" src="assets/img/corazones-removebg-preview.png" alt="">
+          </div>
+          <div class="w-50 d-flex justify-content-center m-auto">
+            <p class="numero">A</p>
+          </div>
+          <div class="paloAbajo mb-2 ms-auto me-2 w-25">
+            <img class="w-100" src="assets/img/corazones-removebg-preview.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Botones e inputs -->
+      <div class="botones col-12 col-md-5 d-flex flex-column align-items-center">
+        
+        <div id="cajaTemporizador" class="mb-3 d-flex justify-content-center align-items-center bg-light rounded-circle w-25 ratio ratio-1x1">
+          <p id="temporizador" class="m-0 align-content-center text-center">10</p>
+        </div>
+
+        <button id="btnTemporizador" class="btn btn-primary mb-3">Activa temporizador</button>
+        <button id="btnAleatorio" class="btn btn-secondary mb-3">Carta aleatoria</button>
+        <label for="estableceAncho" class="form-label fw-medium text-white">Establece el ancho de tu carta</label>
+            <input id="estableceAncho" placeholder="Establece el ancho en PX" type="text" class="form-control mb-3">
+        <label for="estableceAlto" class="form-label fw-medium text-white">Establece el alto de tu carta</label>
+            <input id="estableceAlto" placeholder="Establece el alto en PX" type="text" class="form-control mb-3">
+
       </div>
     </div>
+  </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

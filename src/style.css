@@ -1,7 +1,6 @@
-
-
 body {
- height: 100vh;
+  min-height: 100vh;
+  display: flex;
 }
 
 #fondo {
@@ -13,39 +12,56 @@ body {
   object-fit: cover;
   z-index: -1;
 }
-    .tapiz {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(https://media.istockphoto.com/id/905486620/es/foto/verde-fieltro-textura-para-fondo-de-casino.jpg?s=612x612&w=0&k=20&c=aJ8nHdpvROhc9pMXK0AwyhI1PWZ_dVEYUYkcyosoFxg=);
-      padding: 1rem;
-      border-radius: 1rem;
-      max-height: 90%;
-      height: fit-content;
-    }
 
-    .tarjeta {
-      max-width: 400px;
-      aspect-ratio: 2/3;
-      min-width: 150px;
-      background: rgb(248, 246, 246);
-      box-shadow: 10px 10px 7px 7px rgba(0, 0, 0, 0.2);
-    }
+.tapiz {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://media.istockphoto.com/id/905486620/es/foto/verde-fieltro-textura-para-fondo-de-casino.jpg?s=612x612&w=0&k=20&c=aJ8nHdpvROhc9pMXK0AwyhI1PWZ_dVEYUYkcyosoFxg=);
+  padding: 1rem;
+  border-radius: 1rem;
+  height: fit-content;
+}
 
-    .numero {
-      font-size: 4rem;
-      font-weight: bold;
-      text-align: center;
-    }
+.tarjeta {
+  max-width: 400px;
+  min-width: 150px;
+  width: 100%;
+  aspect-ratio: 2/3;
+  min-height: 225px;
+  max-height: 600px;
+  background: rgb(248, 246, 246);
+  box-shadow: 10px 10px 7px 7px rgba(0, 0, 0, 0.2);
+  box-sizing: content-box;
 
-    #temporizador {
-      font-size: 2rem;
-      font-weight: bold;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    button,
-    input {
-      border-radius: 10px;
-      box-sizing: border-box;
-      width: 100%;
-      max-width: 200px;
-    }
+.numero {
+  font-size: 4.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+
+.paloArriba,
+.paloAbajo {
+  font-size: 4.5em;
+  text-align: center;
+  color: black;
+  line-height: 1;
+}
+
+#temporizador {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button,
+input {
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 200px;
+}

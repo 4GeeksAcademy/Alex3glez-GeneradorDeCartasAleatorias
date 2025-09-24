@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" href="https://play-lh.googleusercontent.com/009hpXoLRxULWBEF8VsHnNTjFrOQVFKfkQfIxZcDGWtVSZEU5mKtSJyy3Zv3pxVcZQ" />
+  <link rel="icon"
+    href="https://play-lh.googleusercontent.com/009hpXoLRxULWBEF8VsHnNTjFrOQVFKfkQfIxZcDGWtVSZEU5mKtSJyy3Zv3pxVcZQ" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Black Jack Game</title>
+  <title>Generador de cartas</title>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
@@ -14,39 +15,42 @@
 </head>
 
 <body>
- <div class="container d-flex justify-content-center align-items-center h-100">
-  <img id="fondo" src="https://static.vecteezy.com/system/resources/previews/002/082/545/non_2x/modern-abstract-casino-background-with-playing-card-signs-poker-symbols-on-black-background-casino-symbols-widescreen-wallpaper-vector.jpg" alt="">
+  <div class="container d-flex justify-content-center align-items-center">
+    <img id="fondo"
+      src="https://static.vecteezy.com/system/resources/previews/002/082/545/non_2x/modern-abstract-casino-background-with-playing-card-signs-poker-symbols-on-black-background-casino-symbols-widescreen-wallpaper-vector.jpg"
+      alt="">
 
     <div class="tapiz m-3 row w-100 d-flex justify-content-center align-items-center">
-      
-  
-      <div class="col-12 col-md-6  d-flex justify-content-center align-items-center m-4">
-        <div class="tarjeta rounded-4 d-flex flex-column border border-black p-2">
-          <div class="paloArriba ms-2 mt-2 w-25">
-            <img class="img-fluid ratio ratio-1x1" src="assets/img/corazones-removebg-preview.png" alt="">
+
+
+      <div class="col-9 col-md-6 d-flex justify-content-center align-items-center m-4">
+        <div class="tarjeta rounded-4  border border-black p-2">
+          <div class="ms-2">
+            <p class="paloArriba text-start m-0 p-0">♣</p>
           </div>
-          <div class="w-50 d-flex justify-content-center m-auto">
-            <p class="numero">A</p>
+          <div class=" d-flex justify-content-center m-auto">
+            <p class="numero m-0">A</p>
           </div>
-          <div class="paloAbajo mb-2 ms-auto me-2 w-25">
-            <img class="img-fluid ratio ratio-1x1" src="assets/img/corazones-removebg-preview.png" alt="">
+          <div class="me-2">
+            <p class="paloAbajo text-end m-0 p-0">♣</p>
           </div>
         </div>
       </div>
 
       <!-- Botones e inputs -->
       <div class="botones col-12 col-md-5 d-flex flex-column align-items-center">
-        
-        <div id="cajaTemporizador" class="mb-3 d-flex justify-content-center align-items-center bg-light rounded-circle w-25 ratio ratio-1x1">
+
+        <div id="cajaTemporizador"
+          class="mb-3 d-flex justify-content-center align-items-center bg-light rounded-circle w-25 ratio ratio-1x1">
           <p id="temporizador" class="m-0 align-content-center text-center">10</p>
         </div>
 
         <button id="btnTemporizador" class="btn btn-primary mb-3">Activa temporizador</button>
         <button id="btnAleatorio" class="btn btn-secondary mb-3">Carta aleatoria</button>
         <label for="estableceAncho" class="form-label fw-medium text-white">Establece el ancho de tu carta</label>
-            <input id="estableceAncho" placeholder="Establece el ancho en PX" type="text" class="form-control mb-3">
+        <input id="estableceAncho" placeholder="150-400" type="text" class="form-control mb-3">
         <label for="estableceAlto" class="form-label fw-medium text-white">Establece el alto de tu carta</label>
-            <input id="estableceAlto" placeholder="Establece el alto en PX" type="text" class="form-control mb-3">
+        <input id="estableceAlto" placeholder="225-600" type="text" class="form-control mb-3">
 
       </div>
     </div>

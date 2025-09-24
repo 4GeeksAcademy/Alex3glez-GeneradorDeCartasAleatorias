@@ -1,7 +1,7 @@
 import "bootstrap";
 import "./style.css";
 
-
+window.onload= function () {
 const picas = "assets/img/picas-removebg-preview.png";
 const corazones = "assets/img/corazones-removebg-preview.png";
 const rombos = "assets/img/rombos-removebg-preview.png";
@@ -58,19 +58,21 @@ function iniciarTemporizador() {
 
 }
 
+
 function cambiarAncho(e) {
-   if (e.key=="Enter") carta.style.width= inputAlto.value+"px";
+   if (e.key=="Enter") carta.style.width= e.target.value+"px";
     
 }
 function cambiarAlto(e) {
-   if (e.key=="Enter") carta.style.height= inputAlto.value+"px";
+   if (e.key=="Enter") carta.style.height= e.target.value+"px";
     
 }
+
 
 btnAleatorio.addEventListener('click', todoAleatorio);
 btnTemporizador.addEventListener('click', iniciarTemporizador);
 inputAncho.addEventListener('keydown', cambiarAncho)
 inputAlto.addEventListener('keydown', cambiarAlto)
 
-
+}
 
